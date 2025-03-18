@@ -1,0 +1,176 @@
+:root{
+    --sedan-color: hsl(31, 77%, 52%);
+    --suv-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
+    --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --neutral-very-light-gray: hsl(0, 0%, 95%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--neutral-very-light-gray);
+    color: var(--neutral-transparent-white);
+    font-size: 15px;
+    font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Big Shoulders, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--neutral-very-light-gray);
+}
+
+.card {
+    align-items: flex-start;
+    margin: 0;
+    flex: 2;
+}
+
+.column {
+    display: grid;
+    align-content: space-between;
+    justify-items: start;
+    padding: 3rem;
+    flex: 2;
+}
+
+.row {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 75vw;
+    min-height: 75vh;
+}
+
+@media (max-width: 400px) {
+    .row {
+        display: grid;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 100vw;
+        margin: 5rem 2rem 5rem 2rem;
+    }
+    .column {
+        display: grid;
+        align-content: space-between;
+        padding: 3rem;
+        flex: 2;
+        min-height: 50vh;
+    }
+    .card {
+        flex: 1 1 50%;
+        margin: 0 0 2rem 0;
+    }
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.min-h-100 {
+    min-height: 100vh;
+}
+
+.justify-content-center {
+    justify-content: center;
+} 
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-white {
+    color: var(--neutral-transparent-white);
+}
+
+.text-gray {
+    color: var(--neutral-very-light-gray);
+}
+
+.text-sedan {
+    color: var(--sedan-color);
+}
+
+.text-suv {
+    color: var(--suv-color);
+}
+
+.text-luxury {
+    color: var(--luxury-color)
+}
+
+.bg-sedan {
+    background-color: var(--sedan-color);
+}
+
+.bg-suv {
+    background-color: var(--suv-color);
+}
+
+.bg-luxury {
+    background-color: var(--luxury-color);
+}
+
+button {
+    padding: 1rem 2rem 1rem 2rem;
+    /*margin: 10rem 0 0 0;*/
+    border-radius: 24px;
+    align-content: flex-end;
+    justify-content: left;
+    font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+    border: 2px solid var(--neutral-very-light-gray);
+    background-color: var(--neutral-very-light-gray);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.sedan-button {
+    color: var(--sedan-color);
+}
+.sedan-button:hover {
+    background-color: var(--sedan-color);
+    color: var(--neutral-very-light-gray);
+}
+
+.suv-button {
+    color: var(--suv-color);
+}
+.suv-button:hover {
+    background-color: var(--suv-color);
+    color: var(--neutral-very-light-gray)
+}
+
+.luxury-button {
+    color: var(--luxury-color);
+}
+.luxury-button:hover {
+    background-color: var(--luxury-color);
+    color: var(--neutral-very-light-gray);
+}
+
+
+.big-shoulders {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .lexend-deca {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
